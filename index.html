@@ -8,7 +8,16 @@
   <link rel="icon" type="image/jpg" href="assets/images/logo.png">
   <title>Supermom's Cleaning Service</title>
 </head>
-<body>
+<script type="text/javascript">
+  function divAppear() {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      for(i = 0; i < 3; i++) {
+        document.getElementsByClassName("test")[i].style.opacity = '1';
+    }
+    }
+  }
+</script>
+<body onscroll="divAppear()">
   <header>
     <a href="#"><img id="logo" src="assets/images/logo.png"></a>
     <nav>
@@ -36,6 +45,11 @@
     </div>
   </div>
   <main>
+    <div id="test">
+      <div class="test"></div>
+      <div class="test"></div>
+      <div class="test"></div>
+    </div>
   </main>
   <footer>
 

@@ -27,10 +27,11 @@ body {
 }
 
 main {
-  max-width: 60em;
+  max-width: 55em;
   margin: 0 auto;
   display: block;
   padding: 1em;
+  height: 512px;
 }
 
 header {
@@ -69,6 +70,7 @@ nav ul li a {
   cursor: pointer;
   text-decoration: none;
   color: #231F20;
+  transition: 1s ease;
 }
 
 a.active {
@@ -77,11 +79,12 @@ a.active {
 
 nav ul li a:hover {
   color: #1e3d7a;
+  transition: 1s ease;
 }
 
 #banner {
   width: 100%;
-  height: 320px;
+  height: 33vh;
   background: linear-gradient(45deg,#d31f25, #1e3d7a);
 }
 
@@ -97,12 +100,14 @@ nav ul li a:hover {
 }
 
 #sm-info-img {
-  height: 75%;
+  max-height: 75%;
+  height: 256px;
   margin: 2.5em 0 2.5em 3em;
 }
 
 #supermom {
-  height: 75%;
+  max-height: 75%;
+  height: 256px;
   margin: 2.5em 0;
 }
 
@@ -122,8 +127,23 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
+#test {
+  height: 256px; 
+  width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.test {
+  border-radius: 2px;
+  background:#1e3d7a;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   height: 200px;
   width: 100%;
