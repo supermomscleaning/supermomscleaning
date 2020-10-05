@@ -105,7 +105,7 @@ nav ul li a:hover {
   grid-gap: 8px;
   grid-template-columns: 2fr 1fr 2fr;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #sm-info-img {
