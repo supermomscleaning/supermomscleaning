@@ -52,6 +52,7 @@ header {
   position: sticky;
   top: 0;
   background: rgba(240, 240, 240, 0.95);
+  z-index: 5;
 }
 
 #header-div {
