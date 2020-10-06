@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animation-library/attention.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animation-library/rotate.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Spartan:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="assets/images/logo.png">
   <title>Supermom's Cleaning Service</title>
@@ -12,7 +14,7 @@
   function divAppear() {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       for(i = 0; i < 3; i++) {
-        document.getElementsByClassName("test")[i].style.opacity = '1';
+        document.getElementsByTagName("main")[i].style.opacity = '1';
     }
     }
   }
@@ -39,24 +41,22 @@
     </nav>
     </div>
   </header>
-  <div id="banner">
-    <div id="banner-div">
+  <div id="banner" >
+    <div id="banner-div" class="u--pulse">
     <img id="sm-info-img" src="assets/images/supermom-cleaning.png">
-    <img id="supermom" src="assets/images/Supermom-1.png">
+    <img id="supermom" src="assets/images/Supermom-1.png" class="u--pulse">
     <p>"Not only is she responsible, thorough and conscientious but she has exceeded all expectations. She really cares and always goes the extra mile to leave the place fresh and orderly and has even [sent me photos] to ensure that I am satisfied with what she had done."<br> - <em>Carol Fortunato, current client</em><br><br><span id="learn-more">Learn More</span></p>
-    </div>
-    <div>
-      <form>
-        
-      </form>
     </div>
   </div>
   <main>
+    <h2>Services</h2>
     <div id="test">
       <div class="test"></div>
       <div class="test"></div>
       <div class="test"></div>
     </div>
+    <br>
+    <h2>Contact</h2>
   </main>
   <footer>
 
