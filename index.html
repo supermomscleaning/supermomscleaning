@@ -23,13 +23,9 @@
   }
 
   function changeDiv() {
-    var thisDiv = document.getElementById("contact-form");
-
-    thisDiv.style.display = "block";
-    thisDiv.innerHTML = "";
-    
-    thisDiv.innerHTML += "<p>Thank you for contacting us! We'll be in touch soon.</p>";
-    thisDiv.classList.add("u--slideDown");
+    var thisDiv = document.getElementById("confirm-message");
+    thisDiv.innerHTML += "<p id='conf-message'>Thank you for contacting us! We'll be in touch soon.</p>";
+    document.getElementById('conf-message').classList.add("u--slideUp");
   }
 </script>
 <body onscroll="divAppear()">
@@ -74,10 +70,10 @@
     <h2 id="contact">Contact</h2>
     <div id="contact-section">
       <div id="form-div">
-        <form enctype="text/plain" id="contact-form" method="post" action="mailto:yankeebabe_1999@yahoo.com?subject=Supermom's Cleaning Service" onsubmit="changeDiv()">
+        <form enctype="text/plain" id="contact-form" method="POST" action="mailto:yankeebabe_1999@yahoo.com?subject=Supermom's Cleaning Service" onsubmit="changeDiv()">
           <div id="your-name">
-            <input type="text" id="FName"  placeholder="First Name"required>
-            <input type="text" id="LName"  placeholder="Last Name" required>
+            <input type="text" id="FName"  placeholder="First Name">
+            <input type="text" id="LName"  placeholder="Last Name">
           </div>
           <div id="your-email">
             <input type="email" id="Email"  placeholder="Email address (e.g. johnsmith@gmail.com)" required>
@@ -93,6 +89,9 @@
       <div id="img-div">
         <img src="assets/images/contact-bubble.png" id="contact-img">
       </div>
+    </div>
+    <div id="confirm-message">
+
     </div>
   </main>
   <footer>

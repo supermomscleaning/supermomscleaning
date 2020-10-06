@@ -246,6 +246,12 @@ nav ul li a:hover {
   transition: .3s ease;
 }
 
+#conf-message {
+  margin-top: 1em;
+  font-family: "Spartan";
+  font-weight: 500;
+}
+
 footer {
   position: relative;
   bottom: 0;
