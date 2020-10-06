@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/animation-library/attention.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/rotate.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/fade.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animation-library/slide.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Spartan:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="assets/images/logo.png">
   <title>Supermom's Cleaning Service</title>
@@ -20,9 +21,20 @@
     
     }
   }
+
+  function changeDiv() {
+    var thisDiv = document.getElementById("contact-form");
+
+    thisDiv.style.display = "block";
+    thisDiv.innerHTML = "";
+    
+    thisDiv.innerHTML += "<p>Thank you for contacting us! We'll be in touch soon.</p>";
+    thisDiv.classList.add("u--slideDown");
+  }
 </script>
 <body onscroll="divAppear()">
   <header>
+    
     <div id="header-div">
       <a href="#"><img id="logo" src="assets/images/logo.png"></a>
     <nav>
@@ -47,10 +59,11 @@
     <div id="banner-div" class="u--pulse">
     <img id="sm-info-img" src="assets/images/supermom-cleaning.png">
     <img id="supermom" src="assets/images/Supermom-1.png" class="u--pulse">
-    <p>"Not only is she responsible, thorough and conscientious but she has exceeded all expectations. She really cares and always goes the extra mile to leave the place fresh and orderly and has even [sent me photos] to ensure that I am satisfied with what she had done."<br> - <em>Carol Fortunato, current client</em><br><br><span id="learn-more">Learn More</span></p>
+    <p>"Not only is she responsible, thorough and conscientious but she has exceeded all expectations. She really cares and always goes the extra mile to leave the place fresh and orderly and has even [sent me photos] to ensure that I am satisfied with what she had done."<br> - <em>Carol Fortunato, current client</em><br><br><span id="learn-more" onclick="location.href('/about/')">Learn More</span></p>
     </div>
   </div>
   <main>
+    <?php echo date('l, F jS, Y'); ?>
     <h2 id="services">Services</h2>
     <div id="test">
       <div class="test"></div>
@@ -61,16 +74,16 @@
     <h2 id="contact">Contact</h2>
     <div id="contact-section">
       <div id="form-div">
-        <form id="contact-form" method="post" action="contact-form-send.php">
+        <form enctype="text/plain" id="contact-form" method="post" action="mailto:yankeebabe_1999@yahoo.com?subject=Supermom's Cleaning Service" onsubmit="changeDiv()">
           <div id="your-name">
-            <input type="text" id="FName" name="FName" placeholder="First Name"required>
-            <input type="text" id="LName" name="LName" placeholder="Last Name" required>
+            <input type="text" id="FName"  placeholder="First Name"required>
+            <input type="text" id="LName"  placeholder="Last Name" required>
           </div>
           <div id="your-email">
-            <input type="email" id="Email" name="Email" placeholder="Email address (e.g. johnsmith@gmail.com)" required>
+            <input type="email" id="Email"  placeholder="Email address (e.g. johnsmith@gmail.com)" required>
           </div>
           <div id="your-message">
-            <textarea id="Message" name="Message" rows="8" columns="64" placeholder="Your message..."  required></textarea>
+            <textarea id="Message" name="message" rows="8" columns="64" placeholder="Your message..."  required></textarea>
           </div>
           <div id="send-message">
             <button type="submit" id="send-button">Send Message</button>
