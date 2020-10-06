@@ -40,7 +40,8 @@ main {
   margin: 0 auto;
   display: block;
   padding: 1em;
-  height: 512px;
+  min-height: 768px;
+  height: auto;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -90,7 +91,7 @@ nav ul li a {
   cursor: pointer;
   text-decoration: none;
   color: #231F20;
-  transition: 1s ease;
+  transition: .5s ease;
 }
 
 a.active {
@@ -98,8 +99,8 @@ a.active {
 }
 
 nav ul li a:hover {
-  color: #1e3d7a;
-  transition: 1s ease;
+  color: #d31f25;
+  transition: .5s ease;
 }
 
 #banner {
@@ -160,6 +161,90 @@ nav ul li a:hover {
   background:#1e3d7a;
   border-radius: 4px;
   box-shadow: -4px 4px 0px #D31F25, 4px -4px 0 #f1d614;
+}
+
+.test:hover {
+  padding: 3em;
+}
+
+#contact-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 24px;
+}
+
+#contact-form {
+  
+}
+
+#your-name input {
+ display: inline;
+}
+
+#contact-img {
+  max-width: 22em;
+}
+
+#your-name, #your-email, #your-message {
+  margin: 1em 0;
+}
+
+#your-name {
+  margin-top: 0;
+}
+
+#FName, #LName, #Email, #Message {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  padding: .75em;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 2px solid #f1d614;
+  background: #fff;
+  transition: .3s ease;
+}
+
+#FName:hover, #LName:hover, #Email:hover, #Message:hover {
+  border: 2px solid #1E3D7A;
+  transition: .3s ease;
+}
+
+#FName {
+  width: 200px;
+  margin-right: 16px;
+}
+
+#LName {
+  width: 264px;
+}
+
+#Email {
+  width: 512px;
+}
+
+#Message {
+  resize: vertical;
+  width: 512px;
+}
+
+#send-button {
+  border: none;
+  padding: 1em;
+  font-family: "Spartan";
+  text-transform: uppercase;
+  font-weight: 500;
+  background: #f1d614;
+  width: 540px;
+  text-align: center;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+#send-button:hover {
+  color: white;
+  background: #D31F25;
+  transition: .3s ease;
 }
 
 footer {

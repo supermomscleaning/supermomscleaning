@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/attention.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/rotate.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animation-library/fade.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Spartan:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="assets/images/logo.png">
   <title>Supermom's Cleaning Service</title>
@@ -49,14 +50,36 @@
     </div>
   </div>
   <main>
-    <h2>Services</h2>
+    <h2 id="services">Services</h2>
     <div id="test">
       <div class="test"></div>
       <div class="test"></div>
       <div class="test"></div>
     </div>
     <br>
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
+    <div id="contact-section">
+      <div id="form-div">
+        <form id="contact-form" method="post" action="contact-form-send.php">
+          <div id="your-name">
+            <input type="text" id="FName" name="FName" placeholder="First Name"required>
+            <input type="text" id="LName" name="LName" placeholder="Last Name" required>
+          </div>
+          <div id="your-email">
+            <input type="email" id="Email" name="Email" placeholder="Email address (e.g. johnsmith@gmail.com)" required>
+          </div>
+          <div id="your-message">
+            <textarea id="Message" name="Message" rows="8" columns="64" placeholder="Your message..."  required></textarea>
+          </div>
+          <div id="send-message">
+            <button type="submit" id="send-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div id="img-div">
+        <img src="assets/images/contact-bubble.png" id="contact-img">
+      </div>
+    </div>
   </main>
   <footer>
 
