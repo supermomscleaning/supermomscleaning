@@ -5,6 +5,7 @@
   <meta content="utf-8" http-equiv="encoding">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/media-queries.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/attention.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/rotate.css" type="text/css">
   <link rel="stylesheet" href="assets/css/animation-library/fade.css" type="text/css">
@@ -18,7 +19,7 @@
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       
         document.getElementsByTagName("main")[0].style.opacity = '1';
-    
+        document.getElementsByClassName("u--flash")[0].classList.remove("u--flash");
     }
   }
 

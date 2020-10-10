@@ -57,11 +57,10 @@
     opacity: 0; } }
 
 .u--flash {
-  -webkit-animation: flash 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-  
-  -moz-animation: flash 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-  -o-animation: flash 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-  animation: flash 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; }
+  -webkit-animation: flash 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -moz-animation: flash 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -o-animation: flash 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  animation: flash 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; }
 
 /* Bounce */
 @-webkit-keyframes bounce {
