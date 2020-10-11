@@ -255,8 +255,36 @@ nav ul li a:hover {
 footer {
   position: relative;
   bottom: 0;
-  height: 200px;
+  height: auto;
   width: 100%;
   background: #1E3D7A;
   color: white;
+}
+
+#footer-div {
+  display: grid;
+  grid-template-columns: 2fr .5fr 2fr;
+  grid-gap: 64px;
+  width: 55em;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+#footer-div p {
+  line-height: 1.5;
+}
+
+#footer-div span {
+  font-weight: 500;
+}
+
+#footer-div img {
+  display: inline;
+  margin-right: 1em;
+  margin-top: 1em;
+  width: 32px;
+}
+
+#footer-div p:last-child {
+  margin-left: 2em;
 }
