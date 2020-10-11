@@ -147,4 +147,15 @@
     grid-template-rows: 1fr 1fr 1fr;
     height: 640px;
   }
+
+  #footer-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .25fr 1fr;
+    grid-gap: 0px;
+    max-width: 100%;
+  }
+
+  #footer-div p {
+    margin-left: 2em;
+  }
 }
