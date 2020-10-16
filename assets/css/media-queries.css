@@ -5,10 +5,13 @@
     max-height: 65%;
   }
 
+  #banner {
+    height: 312px;
+  }
+
   #banner-div {
     grid-gap: 16px;
     grid-template-columns: 40% 10% 50%;
-    
   }
 
   #supermom {
