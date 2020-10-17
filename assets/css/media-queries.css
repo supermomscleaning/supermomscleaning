@@ -100,6 +100,20 @@
 
 /* 512px width */
 
+
+/* 411px width */
+@media only screen and (max-width: 411px) {
+  #logo {
+    margin: 2em 1em;
+    width: 32px;
+  }
+
+  nav {
+    margin: 3em .5em 3em 0;
+    font-size: 13px;
+  }
+}
+
 /* 384px width */
 @media only screen and (max-width: 384px) {
   html {
@@ -175,6 +189,10 @@
     width: 316px;
   }
 
+  #contact {
+    margin-top: 2em;
+  }
+
   #contact-img {
     display: none;
   }
@@ -198,5 +216,10 @@
 
   #footer-div p {
     margin-left: 2em;
+  }
+
+  #footer-div p:last-child {
+    margin-left: 2em;
+    margin-right: 0;
   }
 }
