@@ -66,9 +66,37 @@
   #contact {
     margin-top: 4em;
   }
+
+  #footer-div {
+    grid-gap: 0;
+  }
+
+  #footer-div p:first-child {
+    margin-left: 2em;
+  }
+
+  #footer-div p:last-child {
+    margin-left: 0;
+    margin-right: 3em;
+  }
 }
 
 /* 768px width */
+@media only screen and (max-width: 768px) {
+  #contact {
+    margin-top: 5em;
+  }
+
+  #contact-img {
+    display: none;
+  }
+
+  #footer-div p:last-child {
+    margin-left: -64px;
+    margin-right: 6em;
+  }
+}
+
 
 /* 512px width */
 
