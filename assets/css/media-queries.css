@@ -112,13 +112,6 @@
     margin: 3em .5em 3em 0;
     font-size: 13px;
   }
-}
-
-/* 384px width */
-@media only screen and (max-width: 411px) {
-  html {
-    overflow-x: hidden;
-  }
   header {
     max-width: 100%;
   }
@@ -132,11 +125,6 @@
   #logo {
     margin: 2em 1em;
     width: 2em;
-  }
-
-  nav {
-    margin: 3em 0;
-    font-size: 13px;
   }
 
   nav ul li {
