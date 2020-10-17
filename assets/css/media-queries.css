@@ -115,7 +115,7 @@
 }
 
 /* 384px width */
-@media only screen and (max-width: 384px) {
+@media only screen and (max-width: 411px) {
   html {
     overflow-x: hidden;
   }
