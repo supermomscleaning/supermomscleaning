@@ -57,10 +57,10 @@
     transform: none; } }
 
 .u--fadeInLeft {
-  -webkit-animation: fadeInLeft 1s ease-in;
-  -moz-animation: fadeInLeft 1s ease-in;
-  -o-animation: fadeInLeft 1s ease-in;
-  animation: fadeInLeft 1s ease-in; }
+  -webkit-animation: fadeInLeft .75s ease-in;
+  -moz-animation: fadeInLeft .75s ease-in;
+  -o-animation: fadeInLeft .75s ease-in;
+  animation: fadeInLeft .75s ease-in; }
 
 /* fadeInRight */
 @-webkit-keyframes fadeInRight {
