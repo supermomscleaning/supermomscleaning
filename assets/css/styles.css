@@ -310,3 +310,67 @@ footer {
   text-decoration: none;
   color: #f1d614;
 }
+
+/* About page specifics */
+hr {
+  color: #f1d614;
+  border: none;
+  border-top: 2px solid #f1d614;
+}
+
+#mom-profile {
+  max-width: 10em;
+  float: left;
+}
+
+#cleaning-imgs {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ grid-gap: 16px;
+ max-height: 512px;
+ width: 95%;
+ margin: 1em auto;
+ margin-bottom: 2em;
+}
+
+.cleaning-img {
+  width: 14em;
+  transition: .5s ease;
+}
+
+.cleaning-img:hover {
+  border: 4px solid #1E3D7A;
+  transition: .5s ease;
+}
+
+#mom-profile, .cleaning-img {
+  border: 4px solid #fafafa;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+  display: inline-block;
+}
+
+#mom-profile, #about-1 p, #about-2 p {
+  margin: 1em;
+}
+
+#apply-button {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: #d31f25;
+  padding: 1em 1.5em;
+  font-family: "Spartan";
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1em auto;
+  display: block;
+  width: 256px;
+  border-radius: 64px;
+  transition: .3s ease;
+}
+
+#apply-button:hover {
+  padding: 1em 2em;
+  transition: .3s ease;
+}
