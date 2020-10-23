@@ -317,7 +317,9 @@ hr {
   border: none;
   border-top: 2px solid #f1d614;
 }
-
+#about-h2 {
+  text-align: right;
+}
 #mom-profile {
   max-width: 10em;
   float: left;

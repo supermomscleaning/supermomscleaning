@@ -210,4 +210,30 @@
     margin-left: 2em;
     margin-right: 0;
   }
+
+  #cleaning-imgs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+
+  #about-h2 {
+    text-align: left;
+  }
+
+  .cleaning-img {
+    display: none;
+  }
+
+  .cleaning-img:first-child {
+    display: block;
+    width: 100%;
+  }
+
+  #apply-button {
+    margin-top: -32px;
+  }
+  
 }
