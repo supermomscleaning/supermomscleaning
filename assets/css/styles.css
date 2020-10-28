@@ -376,3 +376,43 @@ hr {
   padding: 1em 2em;
   transition: .3s ease;
 }
+
+/* Services page specifics */
+
+#services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  min-height: 576px;
+  width: 100%;
+  margin: 1em 0 auto;
+}
+
+#faq-div {
+  margin: 4em 0;
+}
+
+#faq {
+  margin: 0 auto;
+}
+
+#faq ol {
+  margin: 1em auto;
+  list-style-type: none;
+}
+
+#faq ol li {
+  margin: 1em 0;
+  font-weight: 600;
+}
+
+#faq ol li:nth-child(even) {
+  font-weight: 400;
+  margin-top: -.5em;
+}
+
+.service {
+  background: #1E3D7A;
+  border-radius: 4px;
+}
