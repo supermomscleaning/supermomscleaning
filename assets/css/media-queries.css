@@ -243,5 +243,11 @@
   #apply-button {
     margin-top: -32px;
   }
+
+  #services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
   
 }
