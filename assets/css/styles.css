@@ -388,7 +388,7 @@ hr {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 16px;
-  min-height: 576px;
+  min-height: 384px;
   width: 100%;
   margin: 1em 0 auto;
 }
@@ -418,5 +418,49 @@ hr {
 
 .service {
   background: #1E3D7A;
+  transition: .5s ease;
+  border-radius: 4px;
+  padding: 1em;
+  color: white;
+  height: auto;
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background: linear-gradient(#1e3d7a, #d31f25);
+  color: white;
   border-radius: 4px;
 }
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
