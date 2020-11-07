@@ -27,6 +27,10 @@
     max-width: 18em;
   }
 
+  #covid-img {
+    max-width: 8em;
+  }
+
   main {
     max-width: 50em;
   }
@@ -53,6 +57,10 @@
   }
   #contact-img {
     max-width: 15em;
+  }
+
+  #covid-img {
+    max-width: 6em;
   }
 
   #banner p {
@@ -87,7 +95,7 @@
     margin-top: 5em;
   }
 
-  #contact-img {
+  #contact-img, #covid-img {
     display: none;
   }
 
@@ -181,7 +189,7 @@
     margin-top: 2em;
   }
 
-  #contact-img {
+  #contact-img, #covid-img {
     display: none;
   }
 

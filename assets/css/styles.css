@@ -194,6 +194,10 @@ nav ul li a:hover {
   max-width: 22em;
 }
 
+#covid-img {
+  max-width: 10em;
+}
+
 #your-name, #your-email, #your-message {
   margin: 1em 0;
 }
